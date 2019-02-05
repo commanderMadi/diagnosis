@@ -1,0 +1,16 @@
+.patient-record {
+    margin: $m-size;
+    font-size: $s-size;
+    background-color: rgba(233, 233, 233, 0.2);
+    padding: $l-size;
+    border-radius: 10px;
+}
+
+.patient-record__btn {
+    margin-right: $s-size;
+}
+
+.patient-record__label {
+    display: block;
+    font-size: $m-size;
+}
