@@ -24,7 +24,7 @@ I wanted to lessen the amount of 3rd parties used as possible so I did not use r
 ### Technologies Used:
 - React
 - Bootstrap (As recommended)
-- CSS compiler (SASS)
+- CSS Preprocessor (SASS)
 - Webpack
 - Babel (to transpile the JSX)
 
