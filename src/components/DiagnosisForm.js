@@ -8,7 +8,7 @@ const DiagnosisForm = props => (
                 className="patient-form__label"
                 htmlFor="patient-name">Name</label>
             <input
-                className="form-control patient-form__input"
+                className="form-control form-control-lg patient-form__input"
                 aria-describedby="patientName"
                 placeholder="Enter patient name..."
                 onChange={props.changeName}
@@ -22,11 +22,11 @@ const DiagnosisForm = props => (
                 className="patient-form__label"
                 htmlFor="patient-phone">Phone</label>
             <input
-                className="form-control patient-form__input"
+                className="form-control form-control-lg patient-form__input"
                 aria-describedby="patientPhone"
                 placeholder="Enter patient phone..."
                 onChange={props.changePhone}
-                type="text"
+                type="number"
                 name="phone"
                 value={props.phone} />
         </div>
@@ -36,7 +36,7 @@ const DiagnosisForm = props => (
                 className="patient-form__label"
                 htmlFor="patient-diagnosis">Diagnosis</label>
             <textarea
-                className="form-control"
+                className="form-control form-control-lg"
                 onChange={props.changeDiagnosis}
                 name="diagnosis"
                 value={props.diagnosis}></textarea>

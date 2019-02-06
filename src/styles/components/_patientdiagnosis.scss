@@ -8,9 +8,17 @@
 
 .patient-record__btn {
     margin-right: $s-size;
+    font-size: $s-size;
+    margin-top: $m-size;
 }
 
 .patient-record__label {
     display: block;
     font-size: $m-size;
+    font-weight: 700;
+}
+
+.patient-record__data {
+    font-size: $m-size;
+
 }

@@ -1,0 +1,48 @@
+.no-patient-info {
+    font-size: $l-size;
+    margin: $l-size;
+    text-align: center;
+}
+
+.no-patient-info__btn {
+    font-size: $m-size;
+}
+
+.form-control-lg {
+    height: $xl-size !important;
+}
+
+textarea.form-control-lg {
+    height: 100px !important;
+}
+
+.patient-form__error {
+    margin: $m-size 0 $m-size 0;
+    font-size: $m-size;
+}
+
+.patient-form__editmode {
+    display: block;
+    color: #ff0000;
+    margin: $m-size 0 $m-size 0;
+    font-size: $m-size;
+}
+
+.patient-form__btn {
+    margin-right: $s-size;
+    font-size: $s-size;
+    margin-top: $m-size;
+}
+
+.patient-form__input {
+    font-size: $m-size;
+}
+
+.patient-form__label {
+    font-size: $m-size;
+
+}
+
+.add-patient {
+    margin-left: $m-size;
+}

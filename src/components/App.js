@@ -1,13 +1,12 @@
 import React from 'react';
 import Header from './Header';
-import PatientDiagnosis from './PatientDiagnosis';
+import Patients from './Patients';
 import AddPatient from './AddPatient';
 
 
 export default class App extends React.Component {
     state = {
         patientsList: [],
-        inEditMode: false,
         allowDelete: false
     }
 
@@ -31,11 +30,9 @@ export default class App extends React.Component {
     }
 
     addDiagnose = (patient) => {
-        if(patient.name && patient.phone && patient.diagnosis) {
-        this.setState((prevState) => ({ patientsList: prevState.patientsList.concat(patient)}));
-        }
-        else {
-            return 'Please fill out all the fields to continue.';
+
+        if (patient.name && patient.phone && patient.diagnosis) {
+            this.setState((prevState) => ({ patientsList: prevState.patientsList.concat(patient) }));
         }
     }
 
@@ -47,27 +44,21 @@ export default class App extends React.Component {
         this.setState(prevState => {
             prevState.patientsList[id] = patient;
             return {
-                patientsList: prevState.patientsList,
-                inEditMode: !this.state.inEditMode
+                patientsList: prevState.patientsList
             }
         }
         )
     }
-
-    toggleEdit = (id) => {
-        console.log(id);
-        this.setState(() => ({inEditMode: !this.state.inEditMode}))
-        }
 
     deleteDiagnose = (patientToDelete) => {
         console.log(patientToDelete);
         this.setState(
             (prevState) => {
                 prevState.patientsList.map(patient => console.log(patient));
-                return {patientsList: prevState.patientsList.filter(patient => patientToDelete !==patient)};
+                return { patientsList: prevState.patientsList.filter(patient => patientToDelete !== patient) };
             }
-                
-            
+
+
         )
     }
 
@@ -75,13 +66,13 @@ export default class App extends React.Component {
         return (
             <div className="container">
                 <Header />
-                <PatientDiagnosis
-                patientsList={this.state.patientsList}
-                toggleEdit={this.toggleEdit}
-                inEditMode={this.state.inEditMode}
-                deleteDiagnose={this.deleteDiagnose}
-                editDiagnose={this.editDiagnose} />
-                <AddPatient addDiagnose={this.addDiagnose} />
+
+                <Patients
+                    patientsList={this.state.patientsList}
+                    deleteDiagnose={this.deleteDiagnose}
+                    editDiagnose={this.editDiagnose} />
+
+                <AddPatient patientsList={this.state.patientsList} addDiagnose={this.addDiagnose} />
 
             </div>
         )
