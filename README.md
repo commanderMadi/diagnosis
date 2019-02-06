@@ -19,12 +19,12 @@
 ### - The editing form reads data from the Patient component props. Added onChange property on the edit form inputs to make changing them possible.
 ### - I preferred to use a textarea element for the diagnosis to allow for extensive writing instead of input.
 
-#Technologies Used:
+# Technologies Used:
 ### - React
 ### - Bootstrap (As recommended)
 ### - CSS compiler (SASS)
 ### - Webpack
 ###- Babel (to transpile the JSX)
 
-# Made with :heart: by Ahmed Magdy as part of the technicial testing required by the Dare Your Body team.
+### Made with :heart: by Ahmed Magdy as part of the technicial testing required by the Dare Your Body team.
 
