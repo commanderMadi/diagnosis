@@ -24,7 +24,7 @@
 ### - Bootstrap (As recommended)
 ### - CSS compiler (SASS)
 ### - Webpack
-###- Babel (to transpile the JSX)
+### - Babel (to transpile the JSX)
 
 ### Made with :heart: by Ahmed Magdy as part of the technicial testing required by the Dare Your Body team.
 
